@@ -6,7 +6,6 @@ import com.course.crudsqlite.R
 import com.course.crudsqlite.room.Note
 import com.course.crudsqlite.room.NoteDB
 import kotlinx.android.synthetic.main.activity_edit.*
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -22,7 +21,7 @@ class EditActivity : AppCompatActivity() {
     }
 
     fun setupListener(){
-        button_create.setOnClickListener {
+        button_save.setOnClickListener {
             CoroutineScope(Dispatchers.IO).launch {
                 db.noteDao().addNote(
                     Note(
