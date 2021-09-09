@@ -8,7 +8,9 @@ import com.course.crudsqlite.R
 import com.course.crudsqlite.room.Note
 import kotlinx.android.synthetic.main.adapter_note.view.*
 
-class NoteAdapter ( private val notes: ArrayList<Note>) : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
+class NoteAdapter (
+    private val notes: ArrayList<Note>,
+    private val listener: OnAdapterListener) : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         return NoteViewHolder(
@@ -19,6 +21,9 @@ class NoteAdapter ( private val notes: ArrayList<Note>) : RecyclerView.Adapter<N
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         val note = notes[position]
         holder.view.text_title.text = note.title
+        holder.view.text_title.setOnClickListener {
+            listener.onClick( note )
+        }
     }
 
     override fun getItemCount() = notes.size
@@ -29,6 +34,10 @@ class NoteAdapter ( private val notes: ArrayList<Note>) : RecyclerView.Adapter<N
         notes.clear()
         notes.addAll(list)
         notifyDataSetChanged()
+    }
+
+    interface OnAdapterListener {
+        fun onClick(note : Note)
     }
 
 }
