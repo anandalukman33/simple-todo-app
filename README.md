@@ -7,4 +7,5 @@ Aplikasi Memo yang dapat :
 2.	Mengubah Data
 3.	Menghapus Data
 
-Bahan ajar untuk mas Adit.
+
+Pembelajaran untuk sprint depan yang dirujuk oleh mas Adit.
