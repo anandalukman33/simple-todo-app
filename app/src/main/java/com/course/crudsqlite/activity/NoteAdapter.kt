@@ -24,6 +24,12 @@ class NoteAdapter (
         holder.view.text_title.setOnClickListener {
             listener.onClick( note )
         }
+        holder.view.icon_edit.setOnClickListener {
+            listener.onUpdate( note )
+        }
+        holder.view.icon_delete.setOnClickListener {
+            listener.onDelete( note )
+        }
     }
 
     override fun getItemCount() = notes.size
@@ -38,6 +44,8 @@ class NoteAdapter (
 
     interface OnAdapterListener {
         fun onClick(note : Note)
+        fun onUpdate(note : Note)
+        fun onDelete(note : Note)
     }
 
 }
