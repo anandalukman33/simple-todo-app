@@ -12,18 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc2df60-9fe8-4c2e-8bd6-52c772cf3d57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/EditActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/EditActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/MainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +54,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -175,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631374645643</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding delete dialog">
+      <created>1631376888162</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631376888162</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,7 +191,8 @@
     <MESSAGE value="..." />
     <MESSAGE value="Showing data from RecyclerView" />
     <MESSAGE value="adding function Update &amp; Delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding function Update &amp; Delete" />
+    <MESSAGE value="adding delete dialog" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding delete dialog" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="17" key="#Custom_Plugin_Repositories" timestamp="1631269499775">
@@ -223,11 +221,11 @@
       <screen x="0" y="0" width="1366" height="720" />
     </state>
     <state x="263" y="115" key="AndroidCreateResourceFileDialog/0.0.1366.720@0.0.1366.720" timestamp="1631209322149" />
-    <state x="532" y="0" key="CommitChangelistDialog2" timestamp="1631374644067">
+    <state x="532" y="0" key="CommitChangelistDialog2" timestamp="1631376886922">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="532" y="0" key="CommitChangelistDialog2/0.0.1366.720@0.0.1366.720" timestamp="1631210745081" />
-    <state x="532" y="0" key="CommitChangelistDialog2/0.0.1366.740@0.0.1366.740" timestamp="1631374644067" />
+    <state x="532" y="0" key="CommitChangelistDialog2/0.0.1366.740@0.0.1366.740" timestamp="1631376886922" />
     <state x="92" y="92" width="1182" height="556" key="DiffContextDialog" timestamp="1631374705500">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
@@ -257,11 +255,15 @@
     </state>
     <state x="177" y="0" key="SettingsEditor/0.0.1366.720@0.0.1366.720" timestamp="1631207004752" />
     <state x="237" y="24" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1631269542792" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1631374649383">
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1631376906290">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="275" y="81" key="Vcs.Push.Dialog.v2/0.0.1366.720@0.0.1366.720" timestamp="1631210751881" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.740@0.0.1366.740" timestamp="1631374649383" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.740@0.0.1366.740" timestamp="1631376906290" />
+    <state x="499" y="147" key="chooseDestDirectoryDialog" timestamp="1631378067260">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="499" y="147" key="chooseDestDirectoryDialog/0.0.1366.740@0.0.1366.740" timestamp="1631378067260" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1631269382413">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
