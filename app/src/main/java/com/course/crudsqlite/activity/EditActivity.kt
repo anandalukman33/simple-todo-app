@@ -59,6 +59,7 @@ class EditActivity : AppCompatActivity() {
                 )
                 finish()
             }
+            Toast.makeText(applicationContext, "Catatan berhasil disimpan!", Toast.LENGTH_SHORT).show()
         }
 
         button_update.setOnClickListener {
@@ -72,6 +73,7 @@ class EditActivity : AppCompatActivity() {
                 )
                 finish()
             }
+            Toast.makeText(applicationContext, "Catatan berhasil diubah!", Toast.LENGTH_SHORT).show()
         }
     }
 

@@ -1,11 +1,13 @@
 package com.course.crudsqlite.activity
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.course.crudsqlite.R
 import com.course.crudsqlite.room.Constant
@@ -70,10 +72,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onDelete(note: Note) {
-                CoroutineScope(Dispatchers.IO).launch {
-                    db.noteDao().deleteNote( note )
-                    loadNote()
-                }
+                deleteDialog( note )
             }
 
         })
@@ -81,5 +80,25 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(applicationContext)
             adapter = noteAdapter
         }
+    }
+
+    private fun deleteDialog( note : Note ) {
+        val alertDialog = AlertDialog.Builder(this)
+        alertDialog.apply {
+            setTitle("Konfirmasi")
+            setMessage("Yakin menghapus catatan ${note.title} ? ")
+            setNegativeButton("Batal") { dialogInterface, i ->
+                dialogInterface.dismiss()
+            }
+            setPositiveButton("Hapus") { dialogInterface, i ->
+                dialogInterface.dismiss()
+                CoroutineScope(Dispatchers.IO).launch {
+                    db.noteDao().deleteNote( note )
+                    loadNote()
+                }
+                Toast.makeText(applicationContext, "Catatan berhasil dihapus!", Toast.LENGTH_SHORT).show()
+            }
+        }
+        alertDialog.show()
     }
 }

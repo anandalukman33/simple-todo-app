@@ -20,19 +20,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/EditActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/EditActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/NoteAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/course/crudsqlite/activity/NoteAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,14 +168,33 @@
       <option name="project" value="LOCAL" />
       <updated>1631210746046</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding function Update &amp; Delete">
+      <created>1631374645643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631374645643</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding Log MainActivity for seeing result db from CoroutineScope getNotes." />
     <MESSAGE value="..." />
     <MESSAGE value="Showing data from RecyclerView" />
-    <option name="LAST_COMMIT_MESSAGE" value="Showing data from RecyclerView" />
+    <MESSAGE value="adding function Update &amp; Delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding function Update &amp; Delete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="17" key="#Custom_Plugin_Repositories" timestamp="1631269499775">
@@ -213,10 +223,15 @@
       <screen x="0" y="0" width="1366" height="720" />
     </state>
     <state x="263" y="115" key="AndroidCreateResourceFileDialog/0.0.1366.720@0.0.1366.720" timestamp="1631209322149" />
-    <state x="532" y="0" key="CommitChangelistDialog2" timestamp="1631210745081">
-      <screen x="0" y="0" width="1366" height="720" />
+    <state x="532" y="0" key="CommitChangelistDialog2" timestamp="1631374644067">
+      <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="532" y="0" key="CommitChangelistDialog2/0.0.1366.720@0.0.1366.720" timestamp="1631210745081" />
+    <state x="532" y="0" key="CommitChangelistDialog2/0.0.1366.740@0.0.1366.740" timestamp="1631374644067" />
+    <state x="92" y="92" width="1182" height="556" key="DiffContextDialog" timestamp="1631374705500">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="92" y="92" width="1182" height="556" key="DiffContextDialog/0.0.1366.740@0.0.1366.740" timestamp="1631374705500" />
     <state x="463" y="115" key="FileChooserDialogImpl" timestamp="1631205167987">
       <screen x="0" y="0" width="1366" height="720" />
     </state>
@@ -242,10 +257,11 @@
     </state>
     <state x="177" y="0" key="SettingsEditor/0.0.1366.720@0.0.1366.720" timestamp="1631207004752" />
     <state x="237" y="24" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1631269542792" />
-    <state x="275" y="81" key="Vcs.Push.Dialog.v2" timestamp="1631210751881">
-      <screen x="0" y="0" width="1366" height="720" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1631374649383">
+      <screen x="0" y="0" width="1366" height="740" />
     </state>
     <state x="275" y="81" key="Vcs.Push.Dialog.v2/0.0.1366.720@0.0.1366.720" timestamp="1631210751881" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.740@0.0.1366.740" timestamp="1631374649383" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1631269382413">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
@@ -255,6 +271,10 @@
       <screen x="0" y="0" width="1366" height="720" />
     </state>
     <state x="497" y="205" key="git4idea.ui.GitTagDialog/0.0.1366.720@0.0.1366.720" timestamp="1631205125385" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1631375580896">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.740@0.0.1366.740" timestamp="1631375580896" />
     <state x="346" y="42" width="672" height="697" key="search.everywhere.popup" timestamp="1631374061562">
       <screen x="0" y="0" width="1366" height="740" />
     </state>
