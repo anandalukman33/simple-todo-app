@@ -1,19 +1,16 @@
 package com.course.crudsqlite.activity
 
-import android.content.DialogInterface
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.course.crudsqlite.R
 import com.course.crudsqlite.room.Constant
 import com.course.crudsqlite.room.Note
 import com.course.crudsqlite.room.NoteDB
-import kotlinx.android.synthetic.main.activity_edit.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -22,8 +19,8 @@ import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity() {
 
-    val db by lazy { NoteDB(this) }
-    lateinit var noteAdapter: NoteAdapter
+    private val db by lazy { NoteDB(this) }
+    private lateinit var noteAdapter: NoteAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         loadNote()
     }
 
-    fun loadNote() {
+    private fun loadNote() {
         CoroutineScope(Dispatchers.IO).launch {
             val notes = db.noteDao().getNotes()
             Log.d("MainActivity", "dbResponse: $notes")
@@ -47,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun setupListener() {
+    private fun setupListener() {
         button_create.setOnClickListener {
             intentEdit(0, Constant.TYPE_CREATE)
         }
@@ -87,10 +84,10 @@ class MainActivity : AppCompatActivity() {
         alertDialog.apply {
             setTitle("Konfirmasi")
             setMessage("Yakin menghapus catatan ${note.title} ? ")
-            setNegativeButton("Batal") { dialogInterface, i ->
+            setNegativeButton("Batal") { dialogInterface, _ ->
                 dialogInterface.dismiss()
             }
-            setPositiveButton("Hapus") { dialogInterface, i ->
+            setPositiveButton("Hapus") { dialogInterface, _ ->
                 dialogInterface.dismiss()
                 CoroutineScope(Dispatchers.IO).launch {
                     db.noteDao().deleteNote( note )

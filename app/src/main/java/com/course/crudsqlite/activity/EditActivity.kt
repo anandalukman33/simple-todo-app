@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 
 class EditActivity : AppCompatActivity() {
 
-    val db by lazy { NoteDB(this) }
+    private val db by lazy { NoteDB(this) }
     private var noteId: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,10 +27,9 @@ class EditActivity : AppCompatActivity() {
 //        Toast.makeText(this, noteId.toString(), Toast.LENGTH_SHORT).show()
     }
 
-    fun setupView(){
+    private fun setupView(){
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        val intentType = intent.getIntExtra("intent_type",0)
-        when (intentType) {
+        when (intent.getIntExtra("intent_type",0)) {
             Constant.TYPE_CREATE -> {
                 button_update.visibility = View.GONE
 
@@ -47,7 +46,7 @@ class EditActivity : AppCompatActivity() {
         }
     }
 
-    fun setupListener(){
+    private fun setupListener(){
         button_save.setOnClickListener {
             CoroutineScope(Dispatchers.IO).launch {
                 db.noteDao().addNote(
@@ -77,7 +76,7 @@ class EditActivity : AppCompatActivity() {
         }
     }
 
-    fun getNote() {
+    private fun getNote() {
         noteId = intent.getIntExtra("intent_id",0)
         CoroutineScope(Dispatchers.IO).launch {
             val notes = db.noteDao().getNote( noteId )[0]
